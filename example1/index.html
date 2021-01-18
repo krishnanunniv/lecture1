@@ -1,5 +1,3 @@
-<!-- see also https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started -->
-
 <!DOCTYPE html> 
 <html>
 
@@ -8,61 +6,56 @@
         <meta charset="utf-8">
         <title>Example 1</title>
 
-        <!-- css -->
+        <!--css-->
         <style>
-            /* uncomment to change default font */
-            /* html {
-                font-family: sans-serif;
-            } */
-
-            img {
-                width: 512px; /* set image width */
+            html{
+                font-family: Helvetica;
             }
 
-            #caption {
-                display: none; /* start with caption hidden */
+            img{
+                width: 1024px;
+            }
+            #caption{
+                display: none;
                 font-style: italic;
             }
+
         </style>
     </head>
 
-    <!-- content -->
     <body>
-        <!-- some text and links -->
         <p>
-            <a href="https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87_crop_max_res.jpg">Event Horizon Telescope, uploader cropped and converted TIF to JPG</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, via Wikimedia Commons
-        </p>
-        
-        <!-- an image -->
-        <img id="myImage"
-             alt="Black hole - Messier 87 crop max res"
-             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/1024px-Black_hole_-_Messier_87_crop_max_res.jpg">
-
-        <!-- a caption -->
-        <p id="caption">
-            The Event Horizon Telescope (EHT) — a planet-scale array of eight ground-based radio telescopes forged through international collaboration — was designed to capture images of a black hole. In coordinated press conferences across the globe, EHT researchers revealed that they succeeded, unveiling the first direct visual evidence of the supermassive black hole in the centre of Messier 87 and its shadow.
+            <a href="https://scx2.b-cdn.net/gfx/news/hires/2018/universe.jpg">Milkyway Galaxy</a>
+            </p>
+            <img id="myImage"
+            alt="Milkyway"
+            src="https://scx2.b-cdn.net/gfx/news/hires/2018/universe.jpg">
         </p>
 
-        <!-- javascript -->
+            <p id="caption">
+                The Milkyway galaxy is the galaxy which contains the solar system. The closest galaxy to milkyway is called Anderomeda
+                </p>
+
+        <p>
+            
+        </p>        
+        <!--javascript-->
         <script type="application/javascript">
-            // get reference to html elements
-            const img = document.getElementById('myImage')
+        const img = document.getElementById('myImage')
 
-            // listen to events related to the image
-            img.addEventListener('mouseover', mouseOver, false)
-            img.addEventListener('mouseout', mouseOut, false)
-
-            // define what happens when there is a mouse over event
-            function mouseOver() {
-                document.getElementById('caption').style.display = 'block';
-            }
-
-            // define what happens when there is a mouse out event
-            function mouseOut() {
+        img.addEventListener('mouseover', mouseOver, false)
+        img.addEventListener('mouseout', mouseOut, false)
+        function mouseOver() {
+                 document.getElementById('caption').style.display ='block';
+        }
+        function mouseOut() {
                 document.getElementById('caption').style.display = 'none';
             }
+           
+
+
         </script>
 
-        <!-- the end -->
+                
     </body>
 </html>
