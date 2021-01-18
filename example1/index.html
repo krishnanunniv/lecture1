@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html>
+
+    <!-- everything that isn't content -->
+    <head>
+        <meta charset="utf-8">
+        <title>Example 1</title>
+
+        <!--css-->
+        <style>
+            html{
+                font-family: Helvetica;
+            }
+
+            img{
+                width: 1024px;
+            }
+            #caption{
+                display: none;
+                font-style: italic;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <p>
+            <a href="https://scx2.b-cdn.net/gfx/news/hires/2018/universe.jpg">Milkyway Galaxy</a>
+            </p>
+            <img id="myImage"
+            alt="Milkyway"
+            src="https://scx2.b-cdn.net/gfx/news/hires/2018/universe.jpg">
+        </p>
+
+            <p id="caption">
+                The Milkyway galaxy is the galaxy which contains the solar system. The closest galaxy to milkyway is called Anderomeda
+                </p>
+
+        <p>
+            
+        </p>        
+        <!--javascript-->
+        <script type="application/javascript">
+        const img = document.getElementById('myImage')
+
+        img.addEventListener('mouseover', mouseOver, false)
+        img.addEventListener('mouseout', mouseOut, false)
+        function mouseOver() {
+                 document.getElementById('caption').style.display ='block';
+        }
+        function mouseOut() {
+                document.getElementById('caption').style.display = 'none';
+            }
+           
+
+
+        </script>
+
+                
+    </body>
+</html>
