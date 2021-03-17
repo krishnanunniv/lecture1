@@ -4,7 +4,7 @@
     <!-- everything that isn't content -->
     <head>
         <meta charset="utf-8">
-        <title>Milkyway Galaxy</title>
+        <title>Simplexity by symmetry</title>
         <meta name="viewport" content="width=deice-width, initial-scale=1"
 
         <!--css-->
@@ -31,54 +31,58 @@
 
     <body>
         <p>
-            <a href="https://solarsystem.nasa.gov/resources/285/the-milky-way-galaxy/"><h1>Milkyway Galaxy</h1></a>
+            <a href="http://www.iaacblog.com/programs/symmetry-simplexity-symmetry-repetition-framework-building/"><h1>Simplexity by symmetry</h1></a>
          </p>
          <p>
-                The Milky Way is the galaxy that contains our Solar System, with the name describing 
-                the galaxy's appearance from Earth:</p> 
-                <p id="caption"><i><b>A hazy band of light seen in the night sky formed from 
-                stars that cannot be individually distinguished by the naked eye.</b></i>
-                </p>
-                
- 
-
-            <img id="myImage"
-            alt="Milkyway"
-            src="https://scx2.b-cdn.net/gfx/news/hires/2018/universe.jpg" alt="andromeda thumbnail">
+            Symmetry by simplexity is a project of IaaC, Institute for Advanced Architecture of Catalonia<br>
+            developed at <b>Master in Advanced Computation for Architecture & Design in (2020/2021) by:</b><br>
+            Students:<b> Krishnanunni Vijayakumar, Keshava Narayan</b>
+            Faculties:<b> Arthur Mamou-Mani</b></p> 
+            
         </p>
+        <img id="myImage"alt="Simplexity by symmetry" src="https://sampleforblogiaac.files.wordpress.com/2020/12/ariel-view1.jpg?w=1024" >
+        <p  id="caption">
+            Aerial View
+        </p>
+        <p><i><b>
+            <h2>Inspiration<br></h2></b>
+            The project began with explorations for inspirations from natural and mathematical systems as a base for design. 
+            For this exercise the chosen inspirations were of the symmetrical repetitions of a kaleidoscope and ruled surfaces.</i></p>
         
-        
-        <!--javascript-->
-          <script type="application/javascript">
-            const img = document.getElementById('myImage')
-    
-            img.addEventListener('mouseover', mouseOver, false)
-            img.addEventListener('mouseout', mouseOut, false)
-            function mouseOver() {
-                     document.getElementById('caption').style.display ='block';
-            }
-            function mouseOut() {
-                    document.getElementById('caption').style.display = 'none';
-            }
-                
-        </script>
         
 
          <div class="popup" id="popup-1">
            <div class="overlay"></div>
            <div class="content">
               <div class="close-btn" onclick="togglePopup()">&times;</div>
-                 <h1>Nearest Galaxy</h1>
-              <p>
-                     The Andromeda Galaxy, also known as Messier 31, M31, or NGC 224 and originally the Andromeda Nebula,
-                     is a barred spiral galaxy approximately 2.5 million light-years (770 kiloparsecs) from Earth and the nearest major galaxy to the Milky Way.
+                 <h2>Fabrication</h2>
+             
+              <img class="fabrication" id="fabrication1" alt="Fabrication Techniques" src=https://sampleforblogiaac.files.wordpress.com/2020/12/fab1.jpg?w=960 width="400px">
+     <p>
+                     Based on the study models a truss assembly approach for fabrication was adopted.
+                      The individual timber strips extracted from the final form is bend individually in 
+                      a bending formwork and these bend timber strips are connected in pairs using steel brackets. 
+                      These paired timber strips forms a truss and this is then assembled together.
          
               </p>
-    
             </div>
          </div>
 
-<button onclick="togglePopup()">Nearest Galaxy</button>       
+<!--javascript-->
+<script type="application/javascript">
+    const img = document.getElementById('myImage')
+
+    img.addEventListener('mouseover', mouseOver, false)
+    img.addEventListener('mouseout', mouseOut, false)
+    function mouseOver() {
+             document.getElementsByid('caption').style.display ='block';
+    }
+    function mouseOut() {
+            document.getElementById('caption').style.display = 'none';
+    }
+        
+</script>
+<button onclick="togglePopup()">Fabrication</button>       
      
                     
     </body>
